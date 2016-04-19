@@ -14,7 +14,7 @@ html {
 body {
   background: #E2E2E2;
   margin: 50px 0 50px;
-  transition: 250ms ease-in-out;
+  transition: background-color 3  300ms ease-in-out;
 }
 
 nav {
@@ -23,6 +23,7 @@ nav {
   top: 0;
   height: 50px;
   width: 100%;
+  z-index: 10;
 
   .nav-container {
     width: 100%;
@@ -50,32 +51,46 @@ footer {
 }
 
 .content {
-  background: red;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px 0 20px;
 
-  .grid {
+  .thumbnail {
     padding: 0 10px 10px 0;
   }
 
-  .block {
+  .project {
     cursor: pointer;
-    background: yellow;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0,0,0,0.5);
     padding-bottom: 10px;
+    font-size: 9px;
+    letter-spacing: 1.5pt;
+    transition: border-bottom 250ms ease-in-out;
+
 
     img {
       filter: saturate(0%) opacity(80%);
       -webkit-filter: saturate(0%) opacity(80%);
       transition: 250ms ease-in-out;
+      padding-bottom: 10px;
+    }
 
-      &:hover {
+    .title, .description {
+      text-transform: uppercase;
+      color: rgba(0,0,0,0.5);
+      transition: color 250ms ease-in-out;
+    }
+
+    &:hover {
+      border-bottom: 1px solid rgba(0,0,0,1);
+      img {
         filter: saturate(100%) opacity(100%);
         -webkit-filter: saturate(100%) opacity(100%);
-
       }
+
+      .title, .description { color: rgba(0,0,0,1); }
+
     }
 
   }

@@ -1,3 +1,48 @@
+.pure-img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.pure-g {
+  letter-spacing: -0.31em;
+  /* Webkit: collapse white-space between units */
+  *letter-spacing: normal;
+  /* reset IE < 8 */
+  *word-spacing: -0.43em;
+  /* IE < 8: collapse white-space between units */
+  text-rendering: optimizespeed;
+  /* Webkit: fixes text-rendering: optimizeLegibility */
+  font-family: FreeSans, Arimo, "Droid Sans", Helvetica, Arial, sans-serif;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  /* IE10 uses display: flexbox */
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+  /* Prevents distributing space between rows */
+  -ms-align-content: flex-start;
+  -webkit-align-content: flex-start;
+  align-content: flex-start; }
+
+.pure-g, .opera-only :-o-prefocus {
+  word-spacing: -0.43em; }
+
+.pure-u {
+  display: inline-block;
+  *display: inline;
+  /* IE < 8: fake inline-block */
+  zoom: 1;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto; }
+
+/*
+Resets the font family back to the OS/browser's default sans-serif font,
+this the same font stack that Normalize.css sets for the `body`.
+*/
+.pure-g [class*="pure-u"] {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
 .pure-u-1,
 .pure-u-1-1,
 .pure-u-1-2,
@@ -814,14 +859,15 @@ html {
 body {
   background: #E2E2E2;
   margin: 50px 0 50px;
-  transition: 250ms ease-in-out; }
+  transition: background-color 3  300ms ease-in-out; }
 
 nav {
   position: fixed;
   left: 0;
   top: 0;
   height: 50px;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
   nav .nav-container {
     width: 100%;
     max-width: 1400px;
@@ -843,22 +889,32 @@ footer {
     background: green; }
 
 .content {
-  background: red;
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 20px; }
-  .content .grid {
+  padding: 0 10px 0 20px; }
+  .content .thumbnail {
     padding: 0 10px 10px 0; }
-  .content .block {
+  .content .project {
     cursor: pointer;
-    background: yellow;
-    border-bottom: 1px solid #000;
-    padding-bottom: 10px; }
-    .content .block img {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    padding-bottom: 10px;
+    font-size: 9px;
+    letter-spacing: 1.5pt;
+    transition: border-bottom 250ms ease-in-out; }
+    .content .project img {
       filter: saturate(0%) opacity(80%);
       -webkit-filter: saturate(0%) opacity(80%);
-      transition: 250ms ease-in-out; }
-      .content .block img:hover {
+      transition: 250ms ease-in-out;
+      padding-bottom: 10px; }
+    .content .project .title, .content .project .description {
+      text-transform: uppercase;
+      color: rgba(0, 0, 0, 0.5);
+      transition: color 250ms ease-in-out; }
+    .content .project:hover {
+      border-bottom: 1px solid black; }
+      .content .project:hover img {
         filter: saturate(100%) opacity(100%);
         -webkit-filter: saturate(100%) opacity(100%); }
+      .content .project:hover .title, .content .project:hover .description {
+        color: black; }
