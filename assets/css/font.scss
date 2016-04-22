@@ -1,7 +1,18 @@
 @font-face {
   font-family: 'DalaMoaRegularNo2';
-  src: url('DalaMoaRegularNo2.eot?#iefix') format('embedded-opentype'),  url('DalaMoaRegularNo2.otf')  format('opentype'),
-	     url('DalaMoaRegularNo2.woff') format('woff'), url('DalaMoaRegularNo2.ttf')  format('truetype'), url('DalaMoaRegularNo2.svg#DalaMoaRegularNo2') format('svg');
+  src:  url('DalaMoaRegularNo2.eot?#iefix') format('embedded-opentype'),
+        url('DalaMoaRegularNo2.otf')  format('opentype'),
+	      url('DalaMoaRegularNo2.woff') format('woff'),
+        url('DalaMoaRegularNo2.ttf')  format('truetype'),
+        url('DalaMoaRegularNo2.svg#DalaMoaRegularNo2') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CalibreWeb-Regular';
+  src: url('CalibreWeb-Regular.eot?#iefix') format('embedded-opentype'),
+	     url('CalibreWeb-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

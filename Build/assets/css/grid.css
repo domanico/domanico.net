@@ -41,7 +41,7 @@ Resets the font family back to the OS/browser's default sans-serif font,
 this the same font stack that Normalize.css sets for the `body`.
 */
 .pure-g [class*="pure-u"] {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .pure-u-1,
 .pure-u-1-1,
