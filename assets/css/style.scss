@@ -15,16 +15,21 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: #E2E2E2;
+  background: #202020;
   color: rgba(0,0,0,0.75);
   transition: background-color 300ms ease-in-out;
-  font-family: CalibreWeb-Regular, Courier;
 }
 
 a {
-  color: #000;
+  color: rgba(0,0,0,0.75);
   text-decoration: none;
   color: rgba(0,0,0,0.75);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
 header {
@@ -43,7 +48,7 @@ header {
     transition: background-color 300ms ease-in-out;
 
     .nav-links {
-      border-bottom: 1px solid rgba(0,0,0,0.5);
+      border-bottom: 1px solid rgba(0,0,0,0.25);
       margin-bottom: 10px;
       height: 60px;
       bottom: 0;
@@ -55,6 +60,7 @@ header {
         position: absolute;
         bottom: 9px;
         left: 0;
+
       }
 
       .contact {
@@ -90,6 +96,12 @@ footer {
     padding: 10px 20px 0;
   }
 
+  .footer-nav {
+    display: block;
+    clear: both;
+    background: red;
+  }
+
 }
 
 main {
@@ -113,40 +125,79 @@ main {
     padding: 0 10px 10px 0;
   }
 
-  .thumbnail {
-    cursor: pointer;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.tile-container {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+
+  img {
     padding-bottom: 10px;
-    font-size: 10px;
-    letter-spacing: .2em;
-    transition: border-bottom 250ms ease-in-out;
+  }
 
+  img.img-only {
+    padding-bottom: 0;
+  }
 
-    img {
-      filter: saturate(0%) opacity(80%);
-      -webkit-filter: saturate(0%) opacity(80%);
-      transition: 250ms ease-in-out;
-      padding-bottom: 10px;
-    }
-
-    .title, .description {
-      text-transform: uppercase;
-      color: rgba(0,0,0,0.5);
-      transition: color 250ms ease-in-out;
-    }
-
-    &:hover {
-      border-bottom: 1px solid rgba(0,0,0,0.5);
-      img {
-        filter: saturate(100%) opacity(100%);
-        -webkit-filter: saturate(100%) opacity(100%);
-      }
-
-      .title, .description { color: rgba(0,0,0,0.75); }
-
-    }
+  h1 {
+    font: 48px DalaMoaRegularNo2;
+    margin: 0;
+    letter-spacing: 0.02em;
+    text-indent: -2px;
 
   }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .2em;
+    margin: 0 0 10px 0;
+
+  }
+
+  p {
+    font-family: CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px 0;
+  }
+
+  .caption {
+    color: rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .2em;
+  }
+
+}
+
+.tile-link {
+  cursor: pointer;
+  transition: border-bottom 250ms ease-in-out;
+
+  img {
+    filter: saturate(0%) opacity(60%);
+    -webkit-filter: saturate(0%) opacity(60%);
+    transition: 250ms ease-in-out;
+  }
+
+  .caption {
+    transition: color 250ms ease-in-out;
+  }
+
+  &:hover {
+    border-bottom: 1px solid rgba(0,0,0,0.5);
+
+    img {
+      filter: saturate(100%) opacity(100%) brightness(100%);
+      -webkit-filter: saturate(100%) opacity(100%) brightness(100%);
+    }
+
+    .caption {
+      color: rgba(0,0,0,0.75);
+    }
+  }
+
 }
 
 @media screen and (min-width: $sm) {

@@ -41,7 +41,7 @@ Resets the font family back to the OS/browser's default sans-serif font,
 this the same font stack that Normalize.css sets for the `body`.
 */
 .pure-g [class*="pure-u"] {
-  font-family: CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: CalibreWeb-Medium, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .pure-u-1,
 .pure-u-1-1,
@@ -858,6 +858,11 @@ this the same font stack that Normalize.css sets for the `body`.
   src: url(../font/CalibreWeb-Regular.eot?#iefix) format("embedded-opentype"), url(../font/CalibreWeb-Regular.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'CalibreWeb-Medium';
+  src: url(../font/CalibreWeb-Medium.eot?#iefix) format("embedded-opentype"), url(../font/CalibreWeb-Medium.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -869,15 +874,19 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: #E2E2E2;
+  background: #202020;
   color: rgba(0, 0, 0, 0.75);
-  transition: background-color 300ms ease-in-out;
-  font-family: CalibreWeb-Regular, Courier; }
+  transition: background-color 300ms ease-in-out; }
 
 a {
-  color: #000;
+  color: rgba(0, 0, 0, 0.75);
   text-decoration: none;
   color: rgba(0, 0, 0, 0.75); }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
 
 header {
   position: fixed;
@@ -893,7 +902,7 @@ header {
     background: #e2e2e2;
     transition: background-color 300ms ease-in-out; }
     header nav .nav-links {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.25);
       margin-bottom: 10px;
       height: 60px;
       bottom: 0;
@@ -926,6 +935,10 @@ footer {
     text-transform: uppercase;
     text-align: center;
     padding: 10px 20px 0; }
+  footer .footer-nav {
+    display: block;
+    clear: both;
+    background: red; }
 
 main {
   min-height: calc(100% - 150px);
@@ -941,29 +954,51 @@ main {
       letter-spacing: 0.02em; }
   main .tile {
     padding: 0 10px 10px 0; }
-  main .thumbnail {
-    cursor: pointer;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    padding-bottom: 10px;
+
+.tile-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 10px; }
+  .tile-container img {
+    padding-bottom: 10px; }
+  .tile-container img.img-only {
+    padding-bottom: 0; }
+  .tile-container h1 {
+    font: 48px DalaMoaRegularNo2;
+    margin: 0;
+    letter-spacing: 0.02em;
+    text-indent: -2px; }
+  .tile-container h2 {
+    text-transform: uppercase;
     font-size: 10px;
     letter-spacing: .2em;
-    transition: border-bottom 250ms ease-in-out; }
-    main .thumbnail img {
-      filter: saturate(0%) opacity(80%);
-      -webkit-filter: saturate(0%) opacity(80%);
-      transition: 250ms ease-in-out;
-      padding-bottom: 10px; }
-    main .thumbnail .title, main .thumbnail .description {
-      text-transform: uppercase;
-      color: rgba(0, 0, 0, 0.5);
-      transition: color 250ms ease-in-out; }
-    main .thumbnail:hover {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
-      main .thumbnail:hover img {
-        filter: saturate(100%) opacity(100%);
-        -webkit-filter: saturate(100%) opacity(100%); }
-      main .thumbnail:hover .title, main .thumbnail:hover .description {
-        color: rgba(0, 0, 0, 0.75); }
+    margin: 0 0 10px 0; }
+  .tile-container p {
+    font-family: CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px 0; }
+  .tile-container .caption {
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .2em; }
+
+.tile-link {
+  cursor: pointer;
+  transition: border-bottom 250ms ease-in-out; }
+  .tile-link img {
+    filter: saturate(0%) opacity(60%);
+    -webkit-filter: saturate(0%) opacity(60%);
+    transition: 250ms ease-in-out; }
+  .tile-link .caption {
+    transition: color 250ms ease-in-out; }
+  .tile-link:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5); }
+    .tile-link:hover img {
+      filter: saturate(10%) opacity(100%) brightness(100%);
+      -webkit-filter: saturate(100%) opacity(100%) brightness(100%); }
+    .tile-link:hover .caption {
+      color: rgba(0, 0, 0, 0.75); }
 
 @media screen and (min-width: 1024px) {
   header nav {

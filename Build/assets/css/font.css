@@ -8,3 +8,8 @@
   src: url(../font/CalibreWeb-Regular.eot?#iefix) format("embedded-opentype"), url(../font/CalibreWeb-Regular.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'CalibreWeb-Medium';
+  src: url(../font/CalibreWeb-Medium.eot?#iefix) format("embedded-opentype"), url(../font/CalibreWeb-Medium.woff) format("woff");
+  font-weight: normal;
+  font-style: normal; }
