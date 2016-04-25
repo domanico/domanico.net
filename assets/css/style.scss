@@ -15,15 +15,14 @@ html {
 body {
   height: 100%;
   margin: 0;
-  background: #202020;
-  color: rgba(0,0,0,0.75);
-  transition: background-color 300ms ease-in-out;
+  background: $black;
+  color: $lt_white;
 }
 
 a {
-  color: rgba(0,0,0,0.75);
   text-decoration: none;
-  color: rgba(0,0,0,0.75);
+  color: $lt_white;
+  transition: color 300ms ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -32,104 +31,127 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
-header {
+.nav {
   position: fixed;
   left: 0;
   top: 0;
   height: 70px;
   width: 100%;
   z-index: 10;
+  background: none;
+  transition: background-color 300ms linear;
+}
 
-  nav {
-    max-width: 1400px;
-    margin: 0 auto 10px;
-    padding: 0 20px;
-    background: #e2e2e2;
-    transition: background-color 300ms ease-in-out;
+.nav.opaque {
+  background: none;
+  background: $black;
+  transition: background-color 300ms linear;
+  transition-delay: 300ms;
 
-    .nav-links {
-      border-bottom: 1px solid rgba(0,0,0,0.25);
-      margin-bottom: 10px;
-      height: 60px;
-      bottom: 0;
-      position: relative;
+  .nav-links {
+    border-bottom: 1px solid $dk_white;
+  }
 
-      .name {
-        font: 30px/20px DalaMoaRegularNo2;
-        letter-spacing: 0.02em;
-        position: absolute;
-        bottom: 9px;
-        left: 0;
+  .name, .contact {
+    color: $md_white;
+  }
+}
 
-      }
+.nav-links {
+  transition: border-color 300ms linear;
+  border-bottom: 1px solid rgba(255,255,255,0.75);
+  margin-bottom: 10px;
+  height: 60px;
+  position: relative;
 
-      .contact {
+  .name {
+    font: 32px/20px DalaMoaRegularNo2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.02em;
+    color: rgba(255,255,255,0.75);
+    position: absolute;
+    bottom: 9px;
+    left: 0;
+
+    &:hover {
+      color: rgba(255,255,255,1);
+    }
+  }
+
+  .nav-list {
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      float: left;
+      margin: 0 0 0 15px;
+      line-height: 10px;
+
+      a {
+        color: rgba(255,255,255,0.75);
         font-size: 10px;
-        letter-spacing: .2em;
+        letter-spacing: 0.2em;
+        line-height: 10px;
         text-transform: uppercase;
-        position: absolute;
-        right: 0;
-        bottom: 9px;
 
+        &:hover {
+          color: rgba(255,255,255,1);
+        }
       }
+
     }
   }
 }
 
-footer {
+.project-mast {
+  transition: opacity 1000ms linear;
+  transition-delay: 300ms;
+  visibility: hidden;
+}
+
+.project-mast.opaque {
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+.footer {
   height: 70px;
-  width: 100%;
-  max-width: 1400px;
-  margin: 80px auto 0;
-  padding: 0 20px;
+  margin-top: 80px;
+  background: $vdk_white;
+}
 
+.content {
+  min-height: calc(100% - 150px);
+}
 
-  .footer-container {
-    border-top: 1px solid rgba(0,0,0,0.2);
-  }
-
-  .footer-content {
-    font-size: 10px;
-    letter-spacing: .2em;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 10px 20px 0;
-  }
-
-  .footer-nav {
-    display: block;
-    clear: both;
-    background: red;
-  }
+.sub-footer {
+  background: $vdk_white;
 
 }
 
-main {
-  min-height: calc(100% - 150px);
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 170px 10px 0 20px;
+.content {
 
   .intro {
-    margin-bottom: 120px;
+    margin: 140px 0 120px;
 
     h1 {
       font: 48px DalaMoaRegularNo2;
       margin: 0;
       letter-spacing: 0.02em;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
   }
 
-  .tile {
-    padding: 0 10px 10px 0;
-  }
 
 }
 
 .tile-container {
-  border-bottom: 1px solid rgba(0,0,0,0.2);
-  padding-bottom: 10px;
 
   img {
     padding-bottom: 10px;
@@ -140,7 +162,7 @@ main {
   }
 
   h1 {
-    font: 48px DalaMoaRegularNo2;
+    font: 64px DalaMoaRegularNo2;
     margin: 0;
     letter-spacing: 0.02em;
     text-indent: -2px;
@@ -162,13 +184,27 @@ main {
     margin: 0 0 10px 0;
   }
 
+  .sub-title {
+    font: 24px/24px DalaMoaRegularNo2, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.04em;
+    color: $dk_white;
+  }
+
   .caption {
-    color: rgba(0,0,0,0.5);
+    color: $dk_white;
     text-transform: uppercase;
     font-size: 10px;
+    line-height: 14px;
     letter-spacing: .2em;
   }
 
+}
+
+.tile-divider {
+  border-bottom: 1px solid $dk_white;
+  padding-bottom: 10px;
 }
 
 .tile-link {
@@ -181,27 +217,41 @@ main {
     transition: 250ms ease-in-out;
   }
 
-  .caption {
+  .caption, .sub-title {
     transition: color 250ms ease-in-out;
   }
 
   &:hover {
-    border-bottom: 1px solid rgba(0,0,0,0.5);
+    border-color: $md_white;
 
     img {
       filter: saturate(100%) opacity(100%) brightness(100%);
       -webkit-filter: saturate(100%) opacity(100%) brightness(100%);
     }
 
-    .caption {
-      color: rgba(0,0,0,0.75);
+    .caption, .sub-title {
+      color: $lt_white;
     }
   }
 
 }
 
-@media screen and (min-width: $sm) {
+.wrapper {
+  
+  .container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 10px 0 20px;
+  }
 
+  .tile {
+    padding: 0 10px 10px 0;
+  }
+}
+
+@media screen and (min-width: $sm) {
+  .project-mast { visibility: visible; }
 }
 
 @media screen and (min-width: $md) {
@@ -209,13 +259,10 @@ main {
 }
 
 @media screen and (min-width: $lg) {
-  header nav { padding: 0 40px; }
-  main { padding: 170px 30px 0 40px;}
-  footer { padding: 0 40px; }
+  .project-mast { visibility: visible; }
+  .wrapper .container { padding: 0 30px 0 40px; }
 }
 
 @media screen and (min-width: $xl) {
-  header nav { padding: 0 40px; }
-  main { padding: 170px 30px 0 40px;}
-  footer { padding: 0 40px; }
+  .wrapper .container { padding: 0 30px 0 40px; }
 }

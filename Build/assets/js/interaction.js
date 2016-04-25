@@ -1,11 +1,26 @@
 $(document).ready(function(){
 
-  $( ".project").on("mouseenter",function(){
-    $('body, nav').css("background-color",$(this).attr("data-color"));
-  }).on("mouseleave",function(){
-    $('body, nav').css("background-color","#202020");
+  $(".project").click(function(){
+    window.location = $(this).attr("data-url");
+
   });
 
-});
+  if ( $( ".project-mast" ).length ) {
 
-$(document).pjax('a', '#pjax-container')
+    $('.nav').removeClass('opaque');
+    $('.project-mast').removeClass('opaque');
+
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      var imgheight = $('.project-mast').height();
+
+      if (scroll >= (imgheight - 200)) {
+        $('.nav, .project-mast').addClass('opaque');
+      } else {
+        $('.nav, .project-mast').removeClass('opaque');
+      }
+
+    });
+  }
+
+});
