@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
-  $(".project").click(function(){
-    window.location = $(this).attr("data-url");
+  // $(".project").click(function(){
+  //   window.location = $(this).attr("data-url");
+  //
+  // });
 
-  });
+  $(document).pjax('a','#data-container', {fragment:'#data-container'} );
 
   if ( $( ".project-mast" ).length ) {
 
