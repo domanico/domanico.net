@@ -945,46 +945,55 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 10px;
       text-transform: uppercase; }
 
-.content {
+#data-container {
   min-height: calc(100% - 100px); }
-  .content .intro {
-    margin: 160px 0 120px; }
-    .content .intro h1 {
-      font: 48px DalaMoaRegularNo2;
-      text-indent: -0.04em;
-      margin: 0;
-      letter-spacing: 0.04em;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale; }
 
-.tile-container h1 {
-  font: 64px DalaMoaRegularNo2;
-  margin: 0;
-  letter-spacing: 0.04em;
-  text-indent: -0.04em; }
-.tile-container h2 {
-  text-transform: uppercase;
-  font-size: 10px;
-  letter-spacing: .2em;
-  margin: 0 0 10px 0; }
-.tile-container p {
-  font-family: CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0 0 10px 0; }
-.tile-container .sub-title {
-  font: 24px/24px DalaMoaRegularNo2, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  letter-spacing: 0.04em;
-  text-indent: -0.04em;
-  color: #575757; }
-.tile-container .caption {
-  color: #575757;
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 14px;
-  letter-spacing: .2em; }
+.content .intro {
+  margin: 160px 0 120px; }
+  .content .intro h1 {
+    font: 48px DalaMoaRegularNo2;
+    text-indent: -0.04em;
+    margin: 0;
+    letter-spacing: 0.04em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+
+.tile-container {
+  position: relative; }
+  .tile-container h1 {
+    font: 64px DalaMoaRegularNo2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    letter-spacing: 0.04em;
+    text-indent: -0.04em; }
+  .tile-container h2 {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: .2em; }
+  .tile-container p {
+    font-family: CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 10px 0; }
+  .tile-container .sub-title {
+    font: 24px/24px DalaMoaRegularNo2, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.04em;
+    text-indent: -0.04em;
+    color: #575757; }
+  .tile-container .caption {
+    color: #575757;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: .2em; }
+    .tile-container .caption em {
+      font-style: normal;
+      color: #8F8F8F; }
+  .tile-container .data .caption {
+    line-height: 16px; }
 
 .tile-divider {
   border-bottom: 1px solid #575757;
@@ -1009,6 +1018,18 @@ h1, h2, h3, h4, h5, h6 {
     .tile-link:hover div {
       color: #C7C7C7; }
 
+.tile-callout {
+  border-top: 1px solid #575757;
+  border-bottom: 1px solid #575757; }
+  .tile-callout p {
+    font: 32px/36px DalaMoaRegularNo2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0.04em;
+    text-indent: -0.04em;
+    padding: 50px 15% 40px;
+    text-align: center; }
+
 .project-mast {
   transition: opacity 1000ms ease-in-out;
   transition-delay: 300ms;
@@ -1027,7 +1048,8 @@ h1, h2, h3, h4, h5, h6 {
   .copyright-left: 0; }
   .footer .footer-links {
     border-top: 1px solid #202020;
-    position: relative; }
+    position: relative;
+    margin-right: 10px; }
   .footer .copyright, .footer .contact {
     color: #202020;
     font-size: 10px;
@@ -1040,18 +1062,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 0; }
 
 .footer_nav {
-  background: #414141;
-  padding: 60px 0;
   margin-top: 50px; }
-  .footer_nav .tile-container {
-    border-top: 1px solid #202020;
-    border-bottom: 0;
-    padding: 6px 0 0 0;
-    transition: opacity 150ms ease-in-out; }
-    .footer_nav .tile-container .sub-title, .footer_nav .tile-container .caption {
-      color: #202020; }
-    .footer_nav .tile-container:hover {
-      opacity: 0.5; }
 
 @media screen and (min-width: 568px) {
   .project-mast {
@@ -1061,7 +1072,12 @@ h1, h2, h3, h4, h5, h6 {
     visibility: visible; }
 
   .wrapper .container {
-    padding: 0 30px 0 40px; } }
-@media screen and (min-width: 1400px) {
-  .wrapper .container {
-    padding: 0 30px 0 40px; } }
+    padding: 0 30px 0 40px; }
+
+  .tile-project_intro {
+    min-height: 250px; }
+
+  .tile-container .data {
+    position: absolute;
+    bottom: 10px;
+    left: 0; } }

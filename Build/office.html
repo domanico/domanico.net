@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+
+  <link rel='stylesheet' href='assets/css/normalize.css'>
+<link rel='stylesheet' href='assets/css/style.css'>
+  <script src='assets/js/jquery-1.8.3.min.js'></script>
+<script src='assets/js/jquery.pjax.js'></script>
+<script src='assets/js/interaction.js'></script>
+
+  <link href="assets/favicon.ico" rel="shortcut icon">
+
+  <title>Ben Domanico</title>
+
+</head>
+
+<body>
+
+  <div class="wrapper nav opaque">
+    <div class="container pure-g">
+
+      <div class="nav-links pure-u-1">
+        <a href="/" class="name">Ben Domanico</a>
+
+        <ul class="nav-list">
+          <li><a href="http://www.linkedin.com/domanico">Resume</a></li>
+          <li><a href="mailto:ben@domanico.net">Contact</a></li>
+        </ul>
+      </div>
+
+    </div> <!-- /.container -->
+  </div> <!-- /.wrapper.nav -->
+
+
+<div id="data-container">
+
+  <div class="wrapper content">
+
+    <img src="assets/img/office/office-18-window_booth.jpg" class="project-mast opaque" />
+
+    <div class="container pure-g">
+
+      <div class="tile pure-u-1 pure-u-lg-1-2">
+        <div class="tile-container tile-divider tile-project_intro tile-project_intro_left">
+          <h1>Office</h1>
+          <h2>San Francisco Headquarters</h1>
+        </div>
+      </div>
+
+      <div class="tile pure-u-1 pure-u-lg-1-2">
+        <div class="tile-container tile-divider tile-project_intro">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <div class="data">
+            <div class="caption">Role: <em>Conception, Creative Direction, Design</em></div>
+            <div class="caption">Output: <em>XXX page perfect bound book</em></div>
+            <div class="caption">Year: <em>2014</em></div>
+            <div class="caption">Notes: <em>Work completed at AppDirect</em></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container">
+          <img src="assets/img/office/office-04-steel_signage.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container">
+          <img src="assets/img/office/office-06-coit.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container tile-callout">
+          <p>
+              Hey here is some info.
+          </p>
+        </div>
+      </div>
+
+      <div class="tile pure-u-1-2 pure-u-1-2">
+        <div class="tile-container">
+          <img src="assets/img/office/office-02-construction.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1-2 pure-u-1-2">
+        <div class="tile-container">
+          <img src="assets/img/office/office-03-construction.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container">
+          <img src="assets/img/office/office-08-stairs_coffee_bar.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container">
+          <img src="assets/img/office/office-12-staircase_profile.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1 pure-u-sm-1-2">
+        <div class="tile-container">
+          <img src="assets/img/office/office-14-open_space.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1 pure-u-sm-1-2">
+        <div class="tile-container">
+          <img src="assets/img/office/office-15-window_booths.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1 pure-u-sm-1-2">
+        <div class="tile-container">
+          <img src="assets/img/office/office-16-steep_ravine.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1 pure-u-sm-1-2">
+        <div class="tile-container">
+          <img src="assets/img/office/office-10-kitchen.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container tile-callout">
+          <p>
+              Hey here is some info.
+          </p>
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container">
+          <img src="assets/img/office/office-11-powerhouse.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container">
+          <img src="assets/img/office/office-20-values_signs.jpg" class="pure-img" />
+        </div>
+      </div>
+
+      <div class="tile pure-u-1">
+        <div class="tile-container">
+          <img src="assets/img/office/office-19-coaster.jpg" class="pure-img" />
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+  </div><!-- /.wrapper.content -->
+
+  <div class="wrapper footer_nav">
+  <div class="container pure-g">
+
+    <div class="tile project pure-u-1 pure-u-sm-1-2 pure-u-md-1-3" data-url="project.html">
+      <div class="tile-container tile-link tile-divider">
+        <div class="sub-title">Base</div>
+        <div class="caption">UI Framework</div>
+      </div>
+    </div>
+
+    <div class="tile project pure-u-1 pure-u-sm-1-2 pure-u-md-1-3" data-url="project.html">
+      <div class="tile-container tile-link tile-divider">
+        <div class="sub-title">Base</div>
+        <div class="caption">UI Framework</div>
+      </div>
+    </div>
+
+    <div class="tile project pure-u-1 pure-u-sm-1-2 pure-u-md-1-3" data-url="project.html">
+      <div class="tile-container tile-link tile-divider">
+        <div class="sub-title">Base</div>
+        <div class="caption">UI Framework</div>
+      </div>
+    </div>
+
+    <div class="tile project pure-u-1 pure-u-sm-1-2 pure-u-md-1-3" data-url="project.html">
+      <div class="tile-container tile-link tile-divider">
+        <div class="sub-title">Base</div>
+        <div class="caption">UI Framework</div>
+      </div>
+    </div>
+
+    <div class="tile project pure-u-1 pure-u-sm-1-2 pure-u-md-1-3" data-url="project.html">
+      <div class="tile-container tile-link tile-divider">
+        <div class="sub-title">Base</div>
+        <div class="caption">UI Framework</div>
+      </div>
+    </div>
+
+    <div class="tile project pure-u-1 pure-u-sm-1-2 pure-u-md-1-3" data-url="project.html">
+      <div class="tile-container tile-link tile-divider">
+        <div class="sub-title">Base</div>
+        <div class="caption">UI Framework</div>
+      </div>
+    </div>
+  </div><!-- /.container -->
+</div><!-- /.wrapper.footer_nav -->
+
+
+</div><!-- /#data-container -->
+
+  <div class="wrapper footer">
+    <div class="container pure-g">
+
+      <div class="footer-links pure-u-1">
+        <div class="copyright">&copy; 2016 Ben Domanico</div>
+        <div class="contact">315 952 1525 &bull; ben@domanico.net</div>
+      </div>
+
+    </div> <!-- /.container -->
+  </div> <!-- /.wrapper.footer -->
+
+</body>
+
+</html>

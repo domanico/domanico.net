@@ -13,7 +13,6 @@ $(document).ready(function(){
     $('.project-mast').removeClass('opaque');
 
     $(window).scroll(function() {
-      console.log('poop');
       var scroll = $(window).scrollTop();
       var imgheight = $('.project-mast').height();
 
