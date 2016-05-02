@@ -36,10 +36,8 @@
   vertical-align: top;
   text-rendering: auto; }
 
-/*
-Resets the font family back to the OS/browser's default sans-serif font,
-this the same font stack that Normalize.css sets for the `body`.
-*/
+/*Resets the font family back to the OS/browser's default sans-serif font,
+ *this the same font stack that Normalize.css sets for the `body`. */
 .pure-g [class*="pure-u"] {
   font-family: CalibreWeb-Medium, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -103,8 +101,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .pure-u-1-8,
 .pure-u-3-24 {
-  width: 12.5000%;
-  *width: 12.4690%; }
+  width: 12.5%;
+  *width: 12.469%; }
 
 .pure-u-1-6,
 .pure-u-4-24 {
@@ -118,7 +116,7 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-1-4,
 .pure-u-6-24 {
   width: 25%;
-  *width: 24.9690%; }
+  *width: 24.969%; }
 
 .pure-u-7-24 {
   width: 29.1667%;
@@ -131,8 +129,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .pure-u-3-8,
 .pure-u-9-24 {
-  width: 37.5000%;
-  *width: 37.4690%; }
+  width: 37.5%;
+  *width: 37.469%; }
 
 .pure-u-5-12,
 .pure-u-10-24 {
@@ -146,7 +144,7 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-1-2,
 .pure-u-12-24 {
   width: 50%;
-  *width: 49.9690%; }
+  *width: 49.969%; }
 
 .pure-u-13-24 {
   width: 54.1667%;
@@ -159,8 +157,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .pure-u-5-8,
 .pure-u-15-24 {
-  width: 62.5000%;
-  *width: 62.4690%; }
+  width: 62.5%;
+  *width: 62.469%; }
 
 .pure-u-2-3,
 .pure-u-16-24 {
@@ -174,7 +172,7 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-3-4,
 .pure-u-18-24 {
   width: 75%;
-  *width: 74.9690%; }
+  *width: 74.969%; }
 
 .pure-u-19-24 {
   width: 79.1667%;
@@ -187,8 +185,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .pure-u-7-8,
 .pure-u-21-24 {
-  width: 87.5000%;
-  *width: 87.4690%; }
+  width: 87.5%;
+  *width: 87.469%; }
 
 .pure-u-11-12,
 .pure-u-22-24 {
@@ -265,8 +263,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-sm-1-8,
   .pure-u-sm-3-24 {
-    width: 12.5000%;
-    *width: 12.4690%; }
+    width: 12.5%;
+    *width: 12.469%; }
 
   .pure-u-sm-1-6,
   .pure-u-sm-4-24 {
@@ -280,7 +278,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-sm-1-4,
   .pure-u-sm-6-24 {
     width: 25%;
-    *width: 24.9690%; }
+    *width: 24.969%; }
 
   .pure-u-sm-7-24 {
     width: 29.1667%;
@@ -293,8 +291,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-sm-3-8,
   .pure-u-sm-9-24 {
-    width: 37.5000%;
-    *width: 37.4690%; }
+    width: 37.5%;
+    *width: 37.469%; }
 
   .pure-u-sm-5-12,
   .pure-u-sm-10-24 {
@@ -308,7 +306,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-sm-1-2,
   .pure-u-sm-12-24 {
     width: 50%;
-    *width: 49.9690%; }
+    *width: 49.969%; }
 
   .pure-u-sm-13-24 {
     width: 54.1667%;
@@ -321,8 +319,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-sm-5-8,
   .pure-u-sm-15-24 {
-    width: 62.5000%;
-    *width: 62.4690%; }
+    width: 62.5%;
+    *width: 62.469%; }
 
   .pure-u-sm-2-3,
   .pure-u-sm-16-24 {
@@ -336,7 +334,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-sm-3-4,
   .pure-u-sm-18-24 {
     width: 75%;
-    *width: 74.9690%; }
+    *width: 74.969%; }
 
   .pure-u-sm-19-24 {
     width: 79.1667%;
@@ -349,8 +347,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-sm-7-8,
   .pure-u-sm-21-24 {
-    width: 87.5000%;
-    *width: 87.4690%; }
+    width: 87.5%;
+    *width: 87.469%; }
 
   .pure-u-sm-11-12,
   .pure-u-sm-22-24 {
@@ -426,8 +424,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-md-1-8,
   .pure-u-md-3-24 {
-    width: 12.5000%;
-    *width: 12.4690%; }
+    width: 12.5%;
+    *width: 12.469%; }
 
   .pure-u-md-1-6,
   .pure-u-md-4-24 {
@@ -441,7 +439,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-md-1-4,
   .pure-u-md-6-24 {
     width: 25%;
-    *width: 24.9690%; }
+    *width: 24.969%; }
 
   .pure-u-md-7-24 {
     width: 29.1667%;
@@ -454,8 +452,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-md-3-8,
   .pure-u-md-9-24 {
-    width: 37.5000%;
-    *width: 37.4690%; }
+    width: 37.5%;
+    *width: 37.469%; }
 
   .pure-u-md-5-12,
   .pure-u-md-10-24 {
@@ -469,7 +467,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-md-1-2,
   .pure-u-md-12-24 {
     width: 50%;
-    *width: 49.9690%; }
+    *width: 49.969%; }
 
   .pure-u-md-13-24 {
     width: 54.1667%;
@@ -482,8 +480,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-md-5-8,
   .pure-u-md-15-24 {
-    width: 62.5000%;
-    *width: 62.4690%; }
+    width: 62.5%;
+    *width: 62.469%; }
 
   .pure-u-md-2-3,
   .pure-u-md-16-24 {
@@ -497,7 +495,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-md-3-4,
   .pure-u-md-18-24 {
     width: 75%;
-    *width: 74.9690%; }
+    *width: 74.969%; }
 
   .pure-u-md-19-24 {
     width: 79.1667%;
@@ -510,8 +508,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-md-7-8,
   .pure-u-md-21-24 {
-    width: 87.5000%;
-    *width: 87.4690%; }
+    width: 87.5%;
+    *width: 87.469%; }
 
   .pure-u-md-11-12,
   .pure-u-md-22-24 {
@@ -587,8 +585,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-lg-1-8,
   .pure-u-lg-3-24 {
-    width: 12.5000%;
-    *width: 12.4690%; }
+    width: 12.5%;
+    *width: 12.469%; }
 
   .pure-u-lg-1-6,
   .pure-u-lg-4-24 {
@@ -602,7 +600,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-lg-1-4,
   .pure-u-lg-6-24 {
     width: 25%;
-    *width: 24.9690%; }
+    *width: 24.969%; }
 
   .pure-u-lg-7-24 {
     width: 29.1667%;
@@ -615,8 +613,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-lg-3-8,
   .pure-u-lg-9-24 {
-    width: 37.5000%;
-    *width: 37.4690%; }
+    width: 37.5%;
+    *width: 37.469%; }
 
   .pure-u-lg-5-12,
   .pure-u-lg-10-24 {
@@ -630,7 +628,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-lg-1-2,
   .pure-u-lg-12-24 {
     width: 50%;
-    *width: 49.9690%; }
+    *width: 49.969%; }
 
   .pure-u-lg-13-24 {
     width: 54.1667%;
@@ -643,8 +641,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-lg-5-8,
   .pure-u-lg-15-24 {
-    width: 62.5000%;
-    *width: 62.4690%; }
+    width: 62.5%;
+    *width: 62.469%; }
 
   .pure-u-lg-2-3,
   .pure-u-lg-16-24 {
@@ -658,7 +656,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-lg-3-4,
   .pure-u-lg-18-24 {
     width: 75%;
-    *width: 74.9690%; }
+    *width: 74.969%; }
 
   .pure-u-lg-19-24 {
     width: 79.1667%;
@@ -671,8 +669,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-lg-7-8,
   .pure-u-lg-21-24 {
-    width: 87.5000%;
-    *width: 87.4690%; }
+    width: 87.5%;
+    *width: 87.469%; }
 
   .pure-u-lg-11-12,
   .pure-u-lg-22-24 {
@@ -748,8 +746,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-xl-1-8,
   .pure-u-xl-3-24 {
-    width: 12.5000%;
-    *width: 12.4690%; }
+    width: 12.5%;
+    *width: 12.469%; }
 
   .pure-u-xl-1-6,
   .pure-u-xl-4-24 {
@@ -763,7 +761,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-xl-1-4,
   .pure-u-xl-6-24 {
     width: 25%;
-    *width: 24.9690%; }
+    *width: 24.969%; }
 
   .pure-u-xl-7-24 {
     width: 29.1667%;
@@ -776,8 +774,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-xl-3-8,
   .pure-u-xl-9-24 {
-    width: 37.5000%;
-    *width: 37.4690%; }
+    width: 37.5%;
+    *width: 37.469%; }
 
   .pure-u-xl-5-12,
   .pure-u-xl-10-24 {
@@ -791,7 +789,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-xl-1-2,
   .pure-u-xl-12-24 {
     width: 50%;
-    *width: 49.9690%; }
+    *width: 49.969%; }
 
   .pure-u-xl-13-24 {
     width: 54.1667%;
@@ -804,8 +802,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-xl-5-8,
   .pure-u-xl-15-24 {
-    width: 62.5000%;
-    *width: 62.4690%; }
+    width: 62.5%;
+    *width: 62.469%; }
 
   .pure-u-xl-2-3,
   .pure-u-xl-16-24 {
@@ -819,7 +817,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-xl-3-4,
   .pure-u-xl-18-24 {
     width: 75%;
-    *width: 74.9690%; }
+    *width: 74.969%; }
 
   .pure-u-xl-19-24 {
     width: 79.1667%;
@@ -832,8 +830,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-xl-7-8,
   .pure-u-xl-21-24 {
-    width: 87.5000%;
-    *width: 87.4690%; }
+    width: 87.5%;
+    *width: 87.469%; }
 
   .pure-u-xl-11-12,
   .pure-u-xl-22-24 {
@@ -849,17 +847,17 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-xl-24-24 {
     width: 100%; } }
 @font-face {
-  font-family: 'DalaMoaRegularNo2';
+  font-family: "DalaMoaRegularNo2";
   src: url(../font/DalaMoaRegularNo2.eot?#iefix) format("embedded-opentype"), url(../font/DalaMoaRegularNo2.otf) format("opentype"), url(../font/DalaMoaRegularNo2.woff) format("woff"), url(../font/DalaMoaRegularNo2.ttf) format("truetype"), url(../font/DalaMoaRegularNo2.svg#DalaMoaRegularNo2) format("svg");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'CalibreWeb-Regular';
+  font-family: "CalibreWeb-Regular";
   src: url(../font/CalibreWeb-Regular.eot?#iefix) format("embedded-opentype"), url(../font/CalibreWeb-Regular.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: 'CalibreWeb-Medium';
+  font-family: "CalibreWeb-Medium";
   src: url(../font/CalibreWeb-Medium.eot?#iefix) format("embedded-opentype"), url(../font/CalibreWeb-Medium.woff) format("woff");
   font-weight: normal;
   font-style: normal; }
@@ -873,21 +871,52 @@ html {
 
 body {
   height: 100%;
-  margin: 0;
   background: #202020;
-  color: #C7C7C7; }
+  color: #c7c7c7; }
 
 a {
   text-decoration: none;
-  color: #C7C7C7;
+  color: #c7c7c7;
   transition: color 150ms ease-in-out; }
   a:hover {
-    color: #E9E9E9; }
+    color: #e9e9e9; }
+  a:active, a:focus {
+    outline: none; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-  padding: 0;
+  padding: 0; }
+
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: DalaMoaRegularNo2, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-variant-numeric: lining-nums;
+  -moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+  letter-spacing: 0.04em;
+  text-indent: -0.04em;
+  line-height: 1.1em;
   font-weight: normal; }
+
+.h1 {
+  font-size: 64px; }
+
+.h2 {
+  font-size: 48px; }
+
+.h3 {
+  font-size: 32px; }
+
+.h4 {
+  font-size: 24px; }
+
+.small-caps {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.2em; }
 
 .wrapper .container {
   width: 100%;
@@ -913,24 +942,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links {
   transition: border-color 300ms linear;
-  border-bottom: 1px solid #C7C7C7;
+  border-bottom: 1px solid #c7c7c7;
   margin: 0 10px 10px 0;
   height: 60px;
   position: relative; }
   .nav-links .name {
-    font: 32px/20px DalaMoaRegularNo2;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: 0.04em;
-    text-indent: -0.04em;
+    line-height: 20px;
     position: absolute;
     bottom: 9px;
     left: 0; }
     .nav-links .name:hover {
-      color: #E9E9E9; }
+      color: #e9e9e9; }
   .nav-links .nav-list {
     position: absolute;
-    right: 0;
+    right: -2px;
     bottom: 9px;
     margin: 0;
     padding: 0;
@@ -940,66 +965,38 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0 0 0 15px;
       line-height: 10px; }
     .nav-links .nav-list a {
-      font-size: 10px;
-      letter-spacing: 0.2em;
-      line-height: 10px;
-      text-transform: uppercase; }
+      line-height: 0px; }
 
 #data-container {
   min-height: calc(100% - 100px); }
 
 .content .intro {
   margin: 160px 0 120px; }
-  .content .intro h1 {
-    font: 48px DalaMoaRegularNo2;
-    text-indent: -0.04em;
-    margin: 0;
-    letter-spacing: 0.04em;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
 
 .tile-container {
   position: relative; }
-  .tile-container h1 {
-    font: 64px DalaMoaRegularNo2;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    margin: 0;
-    letter-spacing: 0.04em;
-    text-indent: -0.04em; }
-  .tile-container h2 {
-    text-transform: uppercase;
-    font-size: 10px;
-    letter-spacing: .2em; }
   .tile-container p {
-    font-family: CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font: 14px/20px CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0 0 10px 0; }
-  .tile-container .sub-title {
-    font: 24px/24px DalaMoaRegularNo2, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: 0.04em;
-    text-indent: -0.04em;
+  .tile-container .h4 {
     color: #575757; }
-  .tile-container .caption {
-    color: #575757;
-    text-transform: uppercase;
-    font-size: 10px;
-    line-height: 14px;
-    letter-spacing: .2em; }
-    .tile-container .caption em {
+  .tile-container .small-caps {
+    color: #575757; }
+    .tile-container .small-caps em {
       font-style: normal;
-      color: #8F8F8F; }
-  .tile-container .data .caption {
-    line-height: 16px; }
+      color: #8f8f8f; }
+  .tile-container .data a {
+    color: #575757; }
+  .tile-container .data a:hover {
+    color: #8f8f8f; }
+  .tile-container .data.all-projects {
+    display: none; }
 
 .tile-divider {
   border-bottom: 1px solid #575757;
-  padding-bottom: 10px; }
+  padding-bottom: 5px; }
   .tile-divider img {
-    padding-bottom: 10px; }
+    padding-bottom: 5px; }
 
 .tile-link {
   cursor: pointer;
@@ -1011,23 +1008,18 @@ h1, h2, h3, h4, h5, h6 {
   .tile-link div {
     transition: color 150ms ease-in-out; }
   .tile-link:hover {
-    border-color: #8F8F8F; }
+    border-color: #8f8f8f; }
     .tile-link:hover img {
       filter: saturate(100%) opacity(100%);
       -webkit-filter: saturate(100%) opacity(100%); }
     .tile-link:hover div {
-      color: #C7C7C7; }
+      color: #c7c7c7; }
 
 .tile-callout {
   border-top: 1px solid #575757;
   border-bottom: 1px solid #575757; }
-  .tile-callout p {
-    font: 32px/36px DalaMoaRegularNo2;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    letter-spacing: 0.04em;
-    text-indent: -0.04em;
-    padding: 50px 15% 40px;
+  .tile-callout div {
+    padding: 50px 15%;
     text-align: center; }
 
 .project-mast {
@@ -1044,22 +1036,19 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   height: 100px;
   padding-top: 10px;
-  background: #414141;
-  .copyright-left: 0; }
+  background: #414141; }
   .footer .footer-links {
     border-top: 1px solid #202020;
     position: relative;
     margin-right: 10px; }
   .footer .copyright, .footer .contact {
     color: #202020;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    line-height: 10px;
-    text-transform: uppercase;
     position: absolute;
-    top: 9px; }
+    top: 5px; }
+  .footer .copyright {
+    left: 0; }
   .footer .contact {
-    right: 0; }
+    right: -2px; }
 
 .footer_nav {
   margin-top: 50px; }
@@ -1080,4 +1069,7 @@ h1, h2, h3, h4, h5, h6 {
   .tile-container .data {
     position: absolute;
     bottom: 10px;
-    left: 0; } }
+    left: 0; }
+
+  .tile-container .data.all-projects {
+    display: block; } }

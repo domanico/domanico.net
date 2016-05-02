@@ -1,0 +1,224 @@
+@import variables
+@import grid
+@import font
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+html
+  height: 100%
+
+body
+  height: 100%
+  background: $black
+  color: $lt_white
+
+a
+  text-decoration: none
+  color: $lt_white
+  transition: color 150ms ease-in-out
+  &:hover
+    color: $white
+  &:active, &:focus
+    outline: none
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+.h1, .h2, .h3, .h4, .h5, .h6
+  font-family: DalaMoaRegularNo2, "Times New Roman", serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-variant-numeric: lining-nums
+  -moz-font-feature-settings: "lnum"
+  -webkit-font-feature-settings: "lnum"
+  font-feature-settings: "lnum"
+  letter-spacing: 0.04em
+  text-indent: -0.04em
+  line-height: 1.1em
+  font-weight: normal
+
+.h1
+  font-size: 64px
+
+.h2
+  font-size: 48px
+
+.h3
+  font-size: 32px
+
+.h4
+  font-size: 24px
+
+.small-caps
+  text-transform: uppercase
+  font-size: 10px
+  line-height: 16px
+  letter-spacing: .2em
+
+.wrapper
+  .container
+    width: 100%
+    max-width: 1400px
+    margin: 0 auto
+    padding: 0 10px 0 20px
+  .tile
+    padding: 0 10px 10px 0
+
+.nav
+  position: fixed
+  left: 0
+  top: 0
+  height: 70px
+  width: 100%
+  z-index: 10
+  background: none
+  transition: background-color 300ms linear
+
+.nav.opaque
+  background: $black
+  transition-delay: 200ms
+
+.nav-links
+  transition: border-color 300ms linear
+  border-bottom: 1px solid $lt-white
+  margin: 0 10px 10px 0
+  height: 60px
+  position: relative
+  .name
+    line-height: 20px
+    position: absolute
+    bottom: 9px
+    left: 0
+    &:hover
+      color: $white
+  .nav-list
+    position: absolute
+    right: -2px
+    bottom: 9px
+    margin: 0
+    padding: 0
+    list-style: none
+    li
+      float: left
+      margin: 0 0 0 15px
+      line-height: 10px
+    a
+      line-height: 0px
+
+#data-container
+  min-height: calc(100% - 100px)
+
+.content
+  .intro
+    margin: 160px 0 120px
+
+.tile-container
+  position: relative
+  p
+    font: 14px/20px CalibreWeb-Regular, "Helvetica Neue", Helvetica, Arial, sans-serif
+    margin: 0 0 10px 0
+  .h4
+    color: $dk_white
+  .small-caps
+    color: $dk_white
+    em
+      font-style: normal
+      color: $md_white
+  .data
+    a
+      color: $dk_white
+    a:hover
+      color: $md_white
+    &.all-projects
+      display: none
+
+.tile-divider
+  border-bottom: 1px solid $dk_white
+  padding-bottom: 5px
+  img
+    padding-bottom: 5px
+
+.tile-link
+  cursor: pointer
+  transition: border-bottom 150ms ease-in-out
+  img
+    filter: saturate(0%) opacity(60%)
+    -webkit-filter: saturate(0%) opacity(60%)
+    transition: 150ms ease-in-out
+  div
+    transition: color 150ms ease-in-out
+  &:hover
+    border-color: $md_white
+    img
+      filter: saturate(100%) opacity(100%)
+      -webkit-filter: saturate(100%) opacity(100%)
+    div
+      color: $lt_white
+
+.tile-callout
+  border-top: 1px solid $dk_white
+  border-bottom: 1px solid $dk_white
+  div
+    padding: 50px 15%
+    text-align: center
+
+.project-mast
+  transition: opacity 1000ms ease-in-out
+  transition-delay: 300ms
+  visibility: hidden
+  margin-bottom: 40px
+  width: 100%
+
+.project-mast.opaque
+  opacity: 0
+  transition: opacity 300ms ease-in-out
+
+.footer
+  height: 100px
+  padding-top: 10px
+  background: $vdk_white
+  .footer-links
+    border-top: 1px solid $black
+    position: relative
+    margin-right: 10px
+  .copyright, .contact
+    color: $black
+    position: absolute
+    top: 5px
+  .copyright
+    left: 0
+  .contact
+    right: -2px
+
+.footer_nav
+  margin-top: 50px
+
+// 568px and up
+@media screen and (min-width: $sm)
+  .project-mast
+    visibility: visible
+
+// 768px and up
+@media screen and (min-width: $md)
+
+// 1024px and up
+@media screen and (min-width: $lg)
+  .project-mast
+    visibility: visible
+  .wrapper .container
+    padding: 0 30px 0 40px
+  .tile-project_intro
+    min-height: 250px
+  .tile-container .data
+    position: absolute
+    bottom: 10px
+    left: 0
+  .tile-container .data.all-projects
+    display: block
+
+// 1400px and up
+@media screen and (min-width: $xl)

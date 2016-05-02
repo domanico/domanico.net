@@ -36,10 +36,8 @@
   vertical-align: top;
   text-rendering: auto; }
 
-/*
-Resets the font family back to the OS/browser's default sans-serif font,
-this the same font stack that Normalize.css sets for the `body`.
-*/
+/*Resets the font family back to the OS/browser's default sans-serif font,
+ *this the same font stack that Normalize.css sets for the `body`. */
 .pure-g [class*="pure-u"] {
   font-family: CalibreWeb-Medium, "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
@@ -103,8 +101,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .pure-u-1-8,
 .pure-u-3-24 {
-  width: 12.5000%;
-  *width: 12.4690%; }
+  width: 12.5%;
+  *width: 12.469%; }
 
 .pure-u-1-6,
 .pure-u-4-24 {
@@ -118,7 +116,7 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-1-4,
 .pure-u-6-24 {
   width: 25%;
-  *width: 24.9690%; }
+  *width: 24.969%; }
 
 .pure-u-7-24 {
   width: 29.1667%;
@@ -131,8 +129,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .pure-u-3-8,
 .pure-u-9-24 {
-  width: 37.5000%;
-  *width: 37.4690%; }
+  width: 37.5%;
+  *width: 37.469%; }
 
 .pure-u-5-12,
 .pure-u-10-24 {
@@ -146,7 +144,7 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-1-2,
 .pure-u-12-24 {
   width: 50%;
-  *width: 49.9690%; }
+  *width: 49.969%; }
 
 .pure-u-13-24 {
   width: 54.1667%;
@@ -159,8 +157,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .pure-u-5-8,
 .pure-u-15-24 {
-  width: 62.5000%;
-  *width: 62.4690%; }
+  width: 62.5%;
+  *width: 62.469%; }
 
 .pure-u-2-3,
 .pure-u-16-24 {
@@ -174,7 +172,7 @@ this the same font stack that Normalize.css sets for the `body`.
 .pure-u-3-4,
 .pure-u-18-24 {
   width: 75%;
-  *width: 74.9690%; }
+  *width: 74.969%; }
 
 .pure-u-19-24 {
   width: 79.1667%;
@@ -187,8 +185,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
 .pure-u-7-8,
 .pure-u-21-24 {
-  width: 87.5000%;
-  *width: 87.4690%; }
+  width: 87.5%;
+  *width: 87.469%; }
 
 .pure-u-11-12,
 .pure-u-22-24 {
@@ -265,8 +263,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-sm-1-8,
   .pure-u-sm-3-24 {
-    width: 12.5000%;
-    *width: 12.4690%; }
+    width: 12.5%;
+    *width: 12.469%; }
 
   .pure-u-sm-1-6,
   .pure-u-sm-4-24 {
@@ -280,7 +278,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-sm-1-4,
   .pure-u-sm-6-24 {
     width: 25%;
-    *width: 24.9690%; }
+    *width: 24.969%; }
 
   .pure-u-sm-7-24 {
     width: 29.1667%;
@@ -293,8 +291,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-sm-3-8,
   .pure-u-sm-9-24 {
-    width: 37.5000%;
-    *width: 37.4690%; }
+    width: 37.5%;
+    *width: 37.469%; }
 
   .pure-u-sm-5-12,
   .pure-u-sm-10-24 {
@@ -308,7 +306,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-sm-1-2,
   .pure-u-sm-12-24 {
     width: 50%;
-    *width: 49.9690%; }
+    *width: 49.969%; }
 
   .pure-u-sm-13-24 {
     width: 54.1667%;
@@ -321,8 +319,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-sm-5-8,
   .pure-u-sm-15-24 {
-    width: 62.5000%;
-    *width: 62.4690%; }
+    width: 62.5%;
+    *width: 62.469%; }
 
   .pure-u-sm-2-3,
   .pure-u-sm-16-24 {
@@ -336,7 +334,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-sm-3-4,
   .pure-u-sm-18-24 {
     width: 75%;
-    *width: 74.9690%; }
+    *width: 74.969%; }
 
   .pure-u-sm-19-24 {
     width: 79.1667%;
@@ -349,8 +347,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-sm-7-8,
   .pure-u-sm-21-24 {
-    width: 87.5000%;
-    *width: 87.4690%; }
+    width: 87.5%;
+    *width: 87.469%; }
 
   .pure-u-sm-11-12,
   .pure-u-sm-22-24 {
@@ -426,8 +424,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-md-1-8,
   .pure-u-md-3-24 {
-    width: 12.5000%;
-    *width: 12.4690%; }
+    width: 12.5%;
+    *width: 12.469%; }
 
   .pure-u-md-1-6,
   .pure-u-md-4-24 {
@@ -441,7 +439,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-md-1-4,
   .pure-u-md-6-24 {
     width: 25%;
-    *width: 24.9690%; }
+    *width: 24.969%; }
 
   .pure-u-md-7-24 {
     width: 29.1667%;
@@ -454,8 +452,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-md-3-8,
   .pure-u-md-9-24 {
-    width: 37.5000%;
-    *width: 37.4690%; }
+    width: 37.5%;
+    *width: 37.469%; }
 
   .pure-u-md-5-12,
   .pure-u-md-10-24 {
@@ -469,7 +467,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-md-1-2,
   .pure-u-md-12-24 {
     width: 50%;
-    *width: 49.9690%; }
+    *width: 49.969%; }
 
   .pure-u-md-13-24 {
     width: 54.1667%;
@@ -482,8 +480,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-md-5-8,
   .pure-u-md-15-24 {
-    width: 62.5000%;
-    *width: 62.4690%; }
+    width: 62.5%;
+    *width: 62.469%; }
 
   .pure-u-md-2-3,
   .pure-u-md-16-24 {
@@ -497,7 +495,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-md-3-4,
   .pure-u-md-18-24 {
     width: 75%;
-    *width: 74.9690%; }
+    *width: 74.969%; }
 
   .pure-u-md-19-24 {
     width: 79.1667%;
@@ -510,8 +508,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-md-7-8,
   .pure-u-md-21-24 {
-    width: 87.5000%;
-    *width: 87.4690%; }
+    width: 87.5%;
+    *width: 87.469%; }
 
   .pure-u-md-11-12,
   .pure-u-md-22-24 {
@@ -587,8 +585,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-lg-1-8,
   .pure-u-lg-3-24 {
-    width: 12.5000%;
-    *width: 12.4690%; }
+    width: 12.5%;
+    *width: 12.469%; }
 
   .pure-u-lg-1-6,
   .pure-u-lg-4-24 {
@@ -602,7 +600,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-lg-1-4,
   .pure-u-lg-6-24 {
     width: 25%;
-    *width: 24.9690%; }
+    *width: 24.969%; }
 
   .pure-u-lg-7-24 {
     width: 29.1667%;
@@ -615,8 +613,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-lg-3-8,
   .pure-u-lg-9-24 {
-    width: 37.5000%;
-    *width: 37.4690%; }
+    width: 37.5%;
+    *width: 37.469%; }
 
   .pure-u-lg-5-12,
   .pure-u-lg-10-24 {
@@ -630,7 +628,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-lg-1-2,
   .pure-u-lg-12-24 {
     width: 50%;
-    *width: 49.9690%; }
+    *width: 49.969%; }
 
   .pure-u-lg-13-24 {
     width: 54.1667%;
@@ -643,8 +641,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-lg-5-8,
   .pure-u-lg-15-24 {
-    width: 62.5000%;
-    *width: 62.4690%; }
+    width: 62.5%;
+    *width: 62.469%; }
 
   .pure-u-lg-2-3,
   .pure-u-lg-16-24 {
@@ -658,7 +656,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-lg-3-4,
   .pure-u-lg-18-24 {
     width: 75%;
-    *width: 74.9690%; }
+    *width: 74.969%; }
 
   .pure-u-lg-19-24 {
     width: 79.1667%;
@@ -671,8 +669,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-lg-7-8,
   .pure-u-lg-21-24 {
-    width: 87.5000%;
-    *width: 87.4690%; }
+    width: 87.5%;
+    *width: 87.469%; }
 
   .pure-u-lg-11-12,
   .pure-u-lg-22-24 {
@@ -748,8 +746,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-xl-1-8,
   .pure-u-xl-3-24 {
-    width: 12.5000%;
-    *width: 12.4690%; }
+    width: 12.5%;
+    *width: 12.469%; }
 
   .pure-u-xl-1-6,
   .pure-u-xl-4-24 {
@@ -763,7 +761,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-xl-1-4,
   .pure-u-xl-6-24 {
     width: 25%;
-    *width: 24.9690%; }
+    *width: 24.969%; }
 
   .pure-u-xl-7-24 {
     width: 29.1667%;
@@ -776,8 +774,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-xl-3-8,
   .pure-u-xl-9-24 {
-    width: 37.5000%;
-    *width: 37.4690%; }
+    width: 37.5%;
+    *width: 37.469%; }
 
   .pure-u-xl-5-12,
   .pure-u-xl-10-24 {
@@ -791,7 +789,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-xl-1-2,
   .pure-u-xl-12-24 {
     width: 50%;
-    *width: 49.9690%; }
+    *width: 49.969%; }
 
   .pure-u-xl-13-24 {
     width: 54.1667%;
@@ -804,8 +802,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-xl-5-8,
   .pure-u-xl-15-24 {
-    width: 62.5000%;
-    *width: 62.4690%; }
+    width: 62.5%;
+    *width: 62.469%; }
 
   .pure-u-xl-2-3,
   .pure-u-xl-16-24 {
@@ -819,7 +817,7 @@ this the same font stack that Normalize.css sets for the `body`.
   .pure-u-xl-3-4,
   .pure-u-xl-18-24 {
     width: 75%;
-    *width: 74.9690%; }
+    *width: 74.969%; }
 
   .pure-u-xl-19-24 {
     width: 79.1667%;
@@ -832,8 +830,8 @@ this the same font stack that Normalize.css sets for the `body`.
 
   .pure-u-xl-7-8,
   .pure-u-xl-21-24 {
-    width: 87.5000%;
-    *width: 87.4690%; }
+    width: 87.5%;
+    *width: 87.469%; }
 
   .pure-u-xl-11-12,
   .pure-u-xl-22-24 {
