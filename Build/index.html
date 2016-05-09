@@ -6,36 +6,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                window.onbeforeunload = function() { ws = null }
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link');
-                    for (var i = 0; i < links.length;i++) {
-                    var link = links[i];
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
-
   <link rel='stylesheet' href='assets/css/normalize.css'>
 <link rel='stylesheet' href='assets/css/style.css'>
-  <script src='assets/js/jquery-1.8.3.min.js'></script>
-<script src='assets/js/jquery.pjax.js'></script>
-<script src='assets/js/interaction.js'></script>
 
   <link href="assets/favicon.ico" rel="shortcut icon">
 
@@ -44,21 +16,21 @@
 </head>
 
 <body>
+  <div id="page-wrapper">
+    <div class="wrapper nav opaque">
+      <div class="container pure-g">
 
-  <div class="wrapper nav opaque">
-    <div class="container pure-g">
+        <div class="nav-links pure-u-1">
+          <a href="/" class="name h3">Ben Domanico</a>
 
-      <div class="nav-links pure-u-1">
-        <a href="/" class="name h3">Ben Domanico</a>
+          <ul class="nav-list">
+            <li><a href="http://www.linkedin.com/in/domanico" class="small-caps">Resume</a></li>
+            <li><a href="mailto:ben@domanico.net" class="small-caps">Contact</a></li>
+          </ul>
+        </div>
 
-        <ul class="nav-list">
-          <li><a href="http://www.linkedin.com/in/domanico" class="small-caps">Resume</a></li>
-          <li><a href="mailto:ben@domanico.net" class="small-caps">Contact</a></li>
-        </ul>
-      </div>
-
-    </div> <!-- /.container -->
-  </div> <!-- /.wrapper.nav -->
+      </div> <!-- /.container -->
+    </div> <!-- /.wrapper.nav -->
 
 
 <div id="data-container">
@@ -123,17 +95,46 @@
 
 </div><!-- /#data-container -->
 
-  <div class="wrapper footer">
-    <div class="container pure-g">
+    <div class="wrapper footer">
+      <div class="container pure-g">
 
-      <div class="footer-links pure-u-1">
-        <div class="copyright small-caps">&copy; 2016 Ben Domanico</div>
-        <div class="contact small-caps"><a href="tel:1-315-952-1525">(315) 952-1525</a> &bull; <a href="mailto:ben@domanico.net">ben@domanico.net</a></div>
-      </div>
+        <div class="footer-links pure-u-1">
+          <div class="copyright small-caps">&copy; 2016 Ben Domanico</div>
+          <div class="contact small-caps"><a href="tel:1-315-952-1525">(315) 952-1525</a> &bull; <a href="mailto:ben@domanico.net">ben@domanico.net</a></div>
+        </div>
 
-    </div> <!-- /.container -->
-  </div> <!-- /.wrapper.footer -->
+      </div> <!-- /.container -->
+    </div> <!-- /.wrapper.footer -->
 
+  </div> <!-- /#page-wrapper -->
+
+  
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                window.onbeforeunload = function() { ws = null }
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link');
+                    for (var i = 0; i < links.length;i++) {
+                    var link = links[i];
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) {
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,'');
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+  <script src='assets/js/jquery-2.2.3.min.js'></script>
+<script src='assets/js/jquery.smoothState.min.js'></script>
+<script src='assets/js/interaction.js'></script>
 </body>
 
 </html>
