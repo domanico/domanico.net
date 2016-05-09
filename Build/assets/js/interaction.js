@@ -5,13 +5,10 @@ $(document).ready(function(){
       cacheLength: 2,
       debug: true,
       onStart: {
-        duration: 250, // Duration of our animation
+        duration: 400, // Duration of our animation
         render: function ($container) {
           // Add your CSS animation reversing class
-
-          console.log('onStart')
-          // debugger
-          $container.addClass('is-exiting');
+          $container.addClass('transitioning');
 
           // Restart your animation
           smoothState.restartCSSAnimations();
@@ -20,13 +17,11 @@ $(document).ready(function(){
       onReady: {
         duration: 0,
         render: function ($container, $newContent) {
-          console.log('onReady')
-
-          // Remove your CSS animation reversing class
-          $container.removeClass('is-exiting');
-
           // Inject the new content
           $container.html($newContent);
+
+          // Remove your CSS animation reversing class
+          $container.removeClass('transitioning');
 
         }
       }

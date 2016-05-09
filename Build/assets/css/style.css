@@ -968,7 +968,11 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 0px; }
 
 #data-container {
-  min-height: calc(100% - 100px); }
+  min-height: calc(100% - 100px);
+  transition: opacity 400ms;
+  opacity: 1; }
+  #data-container.transitioning {
+    opacity: 0; }
 
 .content .intro {
   margin: 160px 0 120px; }
@@ -1025,12 +1029,12 @@ h1, h2, h3, h4, h5, h6 {
 .project-mast {
   transition: opacity 1000ms ease-in-out;
   transition-delay: 300ms;
-  visibility: hidden;
+  visibility: visible;
   margin-bottom: 40px;
   width: 100%; }
 
 .project-mast.opaque {
-  opacity: 0;
+  opacity: 1;
   transition: opacity 300ms ease-in-out; }
 
 .footer {
