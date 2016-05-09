@@ -1,20 +1,32 @@
 $(document).ready(function(){
 
-  // $(".project").click(function(){
-  //   window.location = $(this).attr("data-url");
-  //
-  // });
-  pageBehaviors();
+  var options = {
+      prefetch: false,
+      cacheLength: 2,
+      debug: true,
+      onStart: {
+        duration: 400, // Duration of our animation
+        render: function ($container) {
+          // Add your CSS animation reversing class
+          $container.addClass('transitioning');
 
-  $(document).pjax('a','#data-container', {fragment:'#data-container'} );
+          // Restart your animation
+          smoothState.restartCSSAnimations();
+        }
+      },
+      onReady: {
+        duration: 0,
+        render: function ($container, $newContent) {
+          // Inject the new content
+          $container.html($newContent);
 
-  $(document).on('pjax:send', function() {
-    $('img').fadeOut(200);
-  })
+          // Remove your CSS animation reversing class
+          $container.removeClass('transitioning');
 
-  $(document).on('pjax:complete', function() {
-    pageBehaviors();
-  })
+        }
+      }
+    },
+    smoothState = $('#data-container').smoothState(options).data('smoothState');
 
 });
 

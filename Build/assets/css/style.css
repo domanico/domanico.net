@@ -968,7 +968,11 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 0px; }
 
 #data-container {
-  min-height: calc(100% - 100px); }
+  min-height: calc(100% - 100px);
+  transition: opacity 400ms;
+  opacity: 1; }
+  #data-container.transitioning {
+    opacity: 0; }
 
 .content .intro {
   margin: 160px 0 120px; }
