@@ -1,11 +1,13 @@
 $(document).ready(function(){
 
+  pageBehaviors();
+
   var options = {
       prefetch: false,
       cacheLength: 2,
       scroll: false,
       onStart: {
-        duration: 400, // Duration of our animation
+        duration: 300, // Duration of our animation
         render: function ($container) {
           // Add your CSS animation reversing class
           $container.addClass('transitioning');
@@ -17,11 +19,12 @@ $(document).ready(function(){
       onReady: {
         duration: 0,
         render: function ($container, $newContent) {
-          
+          pageBehaviors();
           // Inject the new content
           $container.find('#data-container').html($newContent.find('.content')[0]);
-          
+
           // Remove your CSS animation reversing class
+
           $container.removeClass('transitioning');
 
         }

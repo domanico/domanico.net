@@ -967,6 +967,9 @@ h1, h2, h3, h4, h5, h6 {
     .nav-links .nav-list a {
       line-height: 0px; }
 
+#page-wrapper {
+  height: 100%; }
+
 #data-container {
   min-height: calc(100% - 100px);
   transition: opacity 400ms ease-in-out;
