@@ -16,16 +16,17 @@ $(document).ready(function(){
       onReady: {
         duration: 0,
         render: function ($container, $newContent) {
+          
           // Inject the new content
-          $container.html($newContent);
-
+          $container.find('#data-container').html($newContent.find('.content')[0]);
+          
           // Remove your CSS animation reversing class
           $container.removeClass('transitioning');
 
         }
       }
     },
-    smoothState = $('#data-container').smoothState(options).data('smoothState');
+    smoothState = $('#page-wrapper').smoothState(options).data('smoothState');
 
 });
 
