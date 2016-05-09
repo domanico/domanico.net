@@ -969,7 +969,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #data-container {
   min-height: calc(100% - 100px);
-  transition: opacity 400ms;
+  transition: opacity 400ms ease-in-out;
   opacity: 1; }
   #data-container.transitioning {
     opacity: 0; }
@@ -1043,7 +1043,12 @@ h1, h2, h3, h4, h5, h6 {
   transition-delay: 300ms;
   visibility: hidden;
   margin-bottom: 40px;
-  width: 100%; }
+  width: 100%;
+  height: calc(100vw * 0.4); }
+  .project-mast img {
+    width: 100%;
+    height: auto;
+    max-height: 100%; }
 
 .project-mast.opaque {
   opacity: 0;
