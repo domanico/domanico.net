@@ -998,11 +998,21 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid #575757;
   padding-bottom: 5px; }
   .tile-divider img {
-    padding-bottom: 5px; }
+    margin-bottom: 5px; }
+
+.footer_nav {
+  margin: 10px 0; }
+  .footer_nav .tile-divider {
+    border-top: 1px solid #575757;
+    padding-top: 8px; }
+  .footer_nav .small-caps {
+    line-height: 10px; }
+  .footer_nav .tile-next {
+    text-align: right; }
 
 .tile-link {
   cursor: pointer;
-  transition: border-bottom 150ms ease-in-out; }
+  transition: border 150ms ease-in-out; }
   .tile-link img {
     filter: saturate(0%) opacity(60%);
     -webkit-filter: saturate(0%) opacity(60%);
@@ -1038,6 +1048,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   height: 100px;
   padding-top: 10px;
+  margin-top: 10px;
   background: #414141; }
   .footer .footer-links {
     border-top: 1px solid #202020;
@@ -1052,9 +1063,6 @@ h1, h2, h3, h4, h5, h6 {
   .footer .contact {
     right: -2px; }
 
-.footer_nav {
-  margin-top: 50px; }
-
 @media screen and (min-width: 568px) {
   .project-mast {
     visibility: visible; } }
@@ -1067,6 +1075,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .tile-project_intro {
     min-height: 250px; }
+    .tile-project_intro p {
+      padding-top: 10px; }
 
   .tile-container .data {
     position: absolute;

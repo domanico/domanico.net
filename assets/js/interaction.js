@@ -4,8 +4,21 @@ $(document).ready(function(){
   //   window.location = $(this).attr("data-url");
   //
   // });
+  pageBehaviors();
 
   $(document).pjax('a','#data-container', {fragment:'#data-container'} );
+
+  $(document).on('pjax:send', function() {
+    $('img').fadeOut(200);
+  })
+
+  $(document).on('pjax:complete', function() {
+    pageBehaviors();
+  })
+
+});
+
+function pageBehaviors() {
 
   if ( $( ".project-mast" ).length ) {
 
@@ -24,5 +37,4 @@ $(document).ready(function(){
 
     });
   }
-
-});
+}
