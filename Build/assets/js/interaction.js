@@ -3,6 +3,7 @@ $(document).ready(function(){
   var options = {
       prefetch: false,
       cacheLength: 2,
+      scroll: false,
       onStart: {
         duration: 400, // Duration of our animation
         render: function ($container) {
