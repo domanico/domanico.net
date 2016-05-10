@@ -940,11 +940,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   z-index: 10;
   background: none;
-  transition: background-color 300ms linear; }
+  transition: background-color 200ms linear; }
 
 .nav.opaque {
   background: #202020;
-  transition-delay: 200ms; }
+  transition-delay: 250ms; }
 
 .nav-links {
   transition: border-color 300ms linear;

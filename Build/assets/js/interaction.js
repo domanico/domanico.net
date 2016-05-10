@@ -14,9 +14,12 @@ function setupScrollBehavior() {
   });
 }
 
-function removeOpaque(){
-  $('.nav').removeClass('opaque');
-  $('.project-mast').removeClass('opaque');
+function setupOpaque(){
+  if ( $( ".project-mast" ).length ) {
+    $('.nav').removeClass('opaque');
+  } else {
+    $('.nav').addClass('opaque');
+  }
 }
 
 $(document).ready(function(){
@@ -38,15 +41,15 @@ $(document).ready(function(){
         }
       },
       onReady: {
-        duration: 0,
+        duration: 10,
         render: function ($container, $newContent) {
 
           // Inject the new content
           $container.find('#data-container').html($newContent.find('.content')[0]);
 
           // Remove your CSS animation reversing class
-          removeOpaque()
-
+          setupOpaque()
+          $(window).scrollTop(0);
           $container.removeClass('transitioning');
 
         }
