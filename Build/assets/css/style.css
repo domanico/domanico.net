@@ -901,10 +901,10 @@ h1, h2, h3, h4, h5, h6 {
   font-feature-settings: "lnum"; }
 
 .h1 {
-  font-size: 64px; }
+  font-size: 72px; }
 
 .h2 {
-  font-size: 48px; }
+  font-size: 52px; }
 
 .h3 {
   font-size: 32px; }
@@ -978,7 +978,8 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0; }
 
 .content .intro {
-  margin: 160px 0 120px; }
+  margin: 160px 0 120px;
+  color: #87BFC7; }
 
 .tile-container {
   position: relative; }
@@ -1089,6 +1090,8 @@ h1, h2, h3, h4, h5, h6 {
 
   .tile-project_intro {
     min-height: 250px; }
+    .tile-project_intro h1 {
+      color: #87BFC7; }
     .tile-project_intro p {
       padding-top: 10px; }
 
