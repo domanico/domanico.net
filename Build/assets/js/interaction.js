@@ -50,7 +50,6 @@ $(document).ready(function(){
 
           // Remove your CSS animation reversing class
           $('.project-mast').addClass('opaque');
-
           $(window).scrollTop(0);
           $container.removeClass('transitioning');
 
