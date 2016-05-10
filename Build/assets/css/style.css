@@ -977,8 +977,8 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%; }
 
 #data-container {
-  min-height: calc(100% - 100px);
-  transition: opacity 400ms ease-in-out;
+  min-height: calc(100% - 200px);
+  transition: opacity 300ms ease-in-out;
   opacity: 1; }
   .transitioning #data-container {
     opacity: 0; }
@@ -1014,15 +1014,13 @@ h1, h2, h3, h4, h5, h6 {
   .tile-divider img {
     margin-bottom: 5px; }
 
-.footer_nav {
-  margin: 10px 0; }
-  .footer_nav .tile-divider {
-    border-top: 1px solid #575757;
-    padding-top: 8px; }
-  .footer_nav .small-caps {
-    line-height: 10px; }
-  .footer_nav .tile-next {
-    text-align: right; }
+.footer_nav .tile-divider {
+  border-top: 1px solid #575757;
+  padding-top: 8px; }
+.footer_nav .small-caps {
+  line-height: 10px; }
+.footer_nav .tile-next {
+  text-align: right; }
 
 .tile-link {
   cursor: pointer;
@@ -1067,7 +1065,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
   height: 100px;
   padding-top: 10px;
-  margin-top: 10px;
+  margin-top: 110px;
   background: #414141; }
   .footer .footer-links {
     border-top: 1px solid #202020;

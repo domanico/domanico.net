@@ -31,13 +31,14 @@ $(document).ready(function(){
       cacheLength: 2,
       scroll: false,
       onStart: {
-        duration: 300, // Duration of our animation
+        duration: 400, // Duration of our animation
         render: function ($container) {
           // Add your CSS animation reversing class
           $container.addClass('transitioning');
 
           // Restart your animation
           smoothState.restartCSSAnimations();
+
         }
       },
       onReady: {
@@ -48,11 +49,16 @@ $(document).ready(function(){
           $container.find('#data-container').html($newContent.find('.content')[0]);
 
           // Remove your CSS animation reversing class
-          setupOpaque()
+          $('.project-mast').addClass('opaque');
+
           $(window).scrollTop(0);
           $container.removeClass('transitioning');
 
         }
+      },
+      onAfter: function($container, $newContent) {
+        $('.project-mast').removeClass('opaque');
+        setupOpaque()
       }
     },
     smoothState = $('#page-wrapper').smoothState(options).data('smoothState');
