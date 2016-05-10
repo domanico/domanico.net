@@ -1,4 +1,27 @@
+function setupScrollBehavior() {
+  $(window).scroll(function() {
+    if ( $( ".project-mast" ).length ) {
+
+      var scroll = $(window).scrollTop();
+      var imgheight = $('.project-mast').height();
+
+      if (scroll >= (imgheight - 200)) {
+        $('.nav, .project-mast').addClass('opaque');
+      } else {
+        $('.nav, .project-mast').removeClass('opaque');
+      }
+    }
+  });
+}
+
+function removeOpaque(){
+  $('.nav').removeClass('opaque');
+  $('.project-mast').removeClass('opaque');
+}
+
 $(document).ready(function(){
+
+  setupScrollBehavior()
 
   var options = {
       prefetch: false,
@@ -22,6 +45,7 @@ $(document).ready(function(){
           $container.find('#data-container').html($newContent.find('.content')[0]);
           
           // Remove your CSS animation reversing class
+          removeOpaque()
           $container.removeClass('transitioning');
 
         }
@@ -30,24 +54,3 @@ $(document).ready(function(){
     smoothState = $('#page-wrapper').smoothState(options).data('smoothState');
 
 });
-
-function pageBehaviors() {
-
-  if ( $( ".project-mast" ).length ) {
-
-    $('.nav').removeClass('opaque');
-    $('.project-mast').removeClass('opaque');
-
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      var imgheight = $('.project-mast').height();
-
-      if (scroll >= (imgheight - 200)) {
-        $('.nav, .project-mast').addClass('opaque');
-      } else {
-        $('.nav, .project-mast').removeClass('opaque');
-      }
-
-    });
-  }
-}
