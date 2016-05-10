@@ -24,7 +24,6 @@ $(document).ready(function(){
           $container.find('#data-container').html($newContent.find('.content')[0]);
 
           // Remove your CSS animation reversing class
-
           $container.removeClass('transitioning');
 
         }

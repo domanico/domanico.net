@@ -874,6 +874,12 @@ body {
   background: #202020;
   color: #c7c7c7; }
 
+::selection {
+  background: #87BFC7; }
+
+::-moz-selection {
+  background: #87BFC7; }
+
 a {
   text-decoration: none;
   color: #c7c7c7;
