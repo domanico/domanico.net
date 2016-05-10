@@ -40,7 +40,7 @@ $(document).ready(function(){
       onReady: {
         duration: 0,
         render: function ($container, $newContent) {
-          pageBehaviors();
+
           // Inject the new content
           $container.find('#data-container').html($newContent.find('.content')[0]);
 
